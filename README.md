@@ -18,3 +18,6 @@ The media project incorporates data analytics and measurement tools to gather in
 The project remains attuned to the rapidly evolving media landscape and explores emerging technologies and trends. It investigates cutting-edge technologies like virtual reality (VR), augmented reality (AR), artificial intelligence (AI), and machine learning (ML) to explore their potential applications in enhancing the media experience.
 
 Overall, the media project aims to empower content creators, publishers, and consumers in the digital era by providing tools, strategies, and insights to navigate the evolving media landscape. By embracing digital technologies and leveraging innovative approaches, the project seeks to redefine how media content is created, distributed, and experienced in the digital realm.
+
+**status of project**
+News scraping -- in progress
