@@ -31,8 +31,13 @@ The relevant information from the search results, such as the title and link of 
 
 To run the application, you can execute the script containing this code. By default, the Flask application runs on http://localhost:5000. You can modify the debug parameter in app.run() to control the debugging mode.
 
+# Testing the Flask Code using Postman
 
+To check if the provided Flask code is working using Postman, follow these steps:
 
+Make sure you have Postman installed on your system. If not, you can download and install it from the official Postman website: https://www.postman.com/downloads/.
 
+Once the Flask application is running, open Postman.
 
+![Create a new request by clicking on the "New" button in Postman's interface.](C:/Users/pandy/OneDrive/Desktop/New folder/pygooglenews/2023-05-22.png)
 
