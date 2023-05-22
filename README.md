@@ -55,6 +55,7 @@ To check if the provided Flask code is working using Postman, follow these steps
 * Click on the "Send" button to send the POST request to the Flask API endpoint.
 
 * Postman will display the response received from the Flask application. If everything is working correctly, you should see a JSON response containing a list of news articles.
+* The server is running on `http://165.343.188.124:8000/news`.
 
 
 
