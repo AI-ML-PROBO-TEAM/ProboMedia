@@ -47,7 +47,7 @@ To check if the provided Flask code is working using Postman, follow these steps
 
 * In the request body, select the "raw" option and set the body format to JSON.
 
-* Provide the required parameters in JSON format. For example:
+* Provide the required parameters in JSON format. You can choose only two countries for now for US it is "us" and for india it is "in" For example:
 {
   "country": "us",
   "keyword": "technology"
