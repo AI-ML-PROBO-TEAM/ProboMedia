@@ -35,9 +35,30 @@ To run the application, you can execute the script containing this code. By defa
 
 To check if the provided Flask code is working using Postman, follow these steps:
 
-Make sure you have Postman installed on your system. If not, you can download and install it from the official Postman website: https://www.postman.com/downloads/.
+* Make sure you have Postman installed on your system. If not, you can download and install it from the official Postman website: https://www.postman.com/downloads/.
 
-Once the Flask application is running, open Postman.
+* Once the Flask application is running, open Postman.
 
-![Create a new request by clicking on the "New" button in Postman's interface.](C:/Users/pandy/OneDrive/Desktop/New folder/pygooglenews/2023-05-22.png)
+* Create a new request by clicking on the "New" button in Postman's interface.
+
+* Set the request type to "POST".
+
+* Enter the URL for the Flask API endpoint in the address bar. For example, if the Flask application is running locally, use http://localhost:5000/news as the URL.
+
+* In the request body, select the "raw" option and set the body format to JSON.
+
+* Provide the required parameters in JSON format. For example:
+{
+  "country": "us",
+  "keyword": "technology"
+}
+* Click on the "Send" button to send the POST request to the Flask API endpoint.
+
+* Postman will display the response received from the Flask application. If everything is working correctly, you should see a JSON response containing a list of news articles.
+
+
+
+
+
+
 
