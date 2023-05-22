@@ -2,7 +2,7 @@
 The  Media project is a comprehensive initiative aimed at exploring and harnessing the power of digital technologies in the realm of media. It encompasses various aspects of  media production, distribution, and consumption, with a focus on leveraging innovative tools and platforms to create, share, and engage with content in the digital landscape.
 The primary objectives of the media project are:
 
-**Content Creation and Production:** 
+# Content Creation and Production: 
 The project aims to enable the creation of high-quality media content across various formats such as videos, images, audio, and interactive experiences. It encompasses techniques like digital storytelling, graphic design, video editing, sound production, and animation to produce engaging and visually appealing content.
 
 **Digital Distribution and Publishing:**
