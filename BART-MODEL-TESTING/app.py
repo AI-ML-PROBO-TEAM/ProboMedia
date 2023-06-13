@@ -25,8 +25,8 @@ openai.api_key = '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'
 # Initialize the BART model and tokenizer
 
 model_name = 'facebook/bart-large-cnn'
-tokeniz = BartTokenizer.from_pretrained("bart_tokenizere")
-summodel = BartForConditionalGeneration.from_pretrained("bart_summodel")
+tokeniz = BartTokenizer.from_pretrained(model_name)
+summodel = BartForConditionalGeneration.from_pretrained(model_name)
 
 
 def generate_summary(text):
