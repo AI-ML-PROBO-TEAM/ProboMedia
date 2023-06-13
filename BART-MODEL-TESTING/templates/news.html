@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Results</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>News Results</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Summary</th>
+            <th>rouge_1</th>
+            <th>rouge_2</th>
+            <th>rouge_l</th>
+        </tr>
+        {% for news in news_list %}
+        <tr>
+            <td>{{ news.title }}</td>
+            <td>{{ news.summary }}</td>
+            <td>{{ news.rouge_1 }}</td>
+            <td>{{ news.rouge_2 }}</td>
+            <td>{{ news.rouge_l }}</td>
+            <!--<td><a href="{{ news.link }}" target="_blank">Read more</a></td>-->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
