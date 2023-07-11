@@ -1,0 +1,11 @@
+bs4==0.0.1
+urllib3==1.26.16
+flask
+newspaper3k==0.2.8
+pygooglenews==0.1.2
+torch==2.0.1
+tensorflow
+transformers
+sentencepiece
+openai
+rouge
