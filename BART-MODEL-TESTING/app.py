@@ -13,14 +13,11 @@ from bs4 import BeautifulSoup
 import requests
 import concurrent.futures
 import urllib3
-import openai
-from rouge import Rouge
 import pandas as pd
 
 
 
 app = Flask(__name__)
-openai.api_key = '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'
 
 # Initialize the BART model and tokenizer
 
@@ -29,20 +26,7 @@ tokeniz = BartTokenizer.from_pretrained(model_name)
 summodel = BartForConditionalGeneration.from_pretrained(model_name)
 
 
-def generate_summary(text):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=text,
-        max_tokens=150,
-        temperature=0.3,
-        top_p=0.9,
-        n=1,
-        stop=None,
-        frequency_penalty=0.0,
-        presence_penalty=0.0
-    )
-    summary = response.choices[0].text
-    return summary
+
 
 # Get the list of free proxies
 proxies = []
@@ -58,11 +42,6 @@ def get_proxies():
             proxies.append(proxy)
 
 
-
-def calculate_rouge(reference_summary, generated_summary):
-    rouge = Rouge()
-    scores = rouge.get_scores(generated_summary, reference_summary)
-    return scores[0]['rouge-1']['f'], scores[0]['rouge-2']['f'], scores[0]['rouge-l']['f']
 
 # Fetch an article using a proxy
 def fetch_article(url):
@@ -136,19 +115,10 @@ def get_news():
                         print(article.text)
                         summarized_content = summarize_content(article.text)
                         tex=article.text
-                        sud='summmarize it'
-                        #questions = generate_question(summarized_content)
-                        reference_summary=generate_summary(tex + ' %s'%sud)
-                        print('moka :-',reference_summary)
-                        rouge_1, rouge_2, rouge_l = calculate_rouge(reference_summary, summarized_content)
                         news = {
                             'title': article.title,
                             'link': entry.link,
-                            'summary': summarized_content,
-                            #'questions': questions,
-                            'rouge_1': rouge_1,
-                            'rouge_2': rouge_2,
-                            'rouge_l': rouge_l
+                            'summary': summarized_content
                         }
                         news_list.append(news)
 
